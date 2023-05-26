@@ -2,5 +2,8 @@
 const time= document.getElementById("timer");
 SetInterval(() => {
 	let d= new Date();
-	time.innerText=d.getSeconds();
+	console.log(d);
+	time.innerText= d.getSeconds();
+	time.innerText= d.getMinutes();
+	time.innerText= d.getHours();
 },1000)
